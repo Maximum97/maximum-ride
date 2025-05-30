@@ -18,10 +18,10 @@ luckyButton.classList.add('hidden');
 luckyMessage.classList.remove('hidden');
 
 // (선택 사항) 메시지가 잠시 나타났다가 사라지게 하려면 아래 주석을 해제하세요.
-/*
+
 setTimeout(function() {
-    luckyMessage.classList.add('hidden');
-    luckyButton.classList.remove('hidden'); // 버튼 다시 보이게 하려면
+luckyMessage.classList.add('hidden');
+luckyButton.classList.remove('hidden'); // 버튼 다시 보이게 하려면
 }, 3000); // 3초 후에 다시 숨김 (밀리초 단위)
-*/
+
 });
