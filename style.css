@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 뷰포트 전체 높이를 차지하도록 설정 */
+    margin: 0;
+    background-color: #f0f8ff; /* 연한 하늘색 배경 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+    background-color: #ff69b4; /* 핫핑크 색상 */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #e0589a; /* 호버 시 약간 어두운 핑크 */
+    transform: translateY(-2px); /* 살짝 위로 올라가는 효과 */
+}
+
+button:active {
+    background-color: #c44782; /* 클릭 시 더 어두운 핑크 */
+    transform: translateY(0); /* 다시 원래 위치로 */
+}
+
+#luckyMessage {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #4CAF50; /* 초록색 */
+    margin-top: 20px;
+    opacity: 1; /* 기본적으로는 투명도 1 (보임) */
+    transition: opacity 0.5s ease; /* 부드러운 전환 효과 */
+}
+
+.hidden {
+    display: none; /* 이 클래스가 있으면 요소를 숨김 */
+    opacity: 0;    /* 투명도를 0으로 설정 (사라짐 효과) */
+}
