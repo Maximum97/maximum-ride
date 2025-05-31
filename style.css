@@ -69,3 +69,23 @@ button:active {
     display: none; /* 이 클래스가 있으면 요소를 숨김 */
     opacity: 0;    /* 투명도를 0으로 설정 (사라짐 효과) */
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* 모바일에서는 h1 글자 크기를 2em으로 줄임 */
+        /* 필요하다면 다른 속성도 여기서 조절할 수 있습니다. */
+    }
+
+    .description {
+        font-size: 1em; /* 설명도 필요하면 줄일 수 있습니다. */
+    }
+
+    button {
+        font-size: 1.5em; /* 버튼 글자 크기도 줄일 수 있습니다. */
+        padding: 10px 20px;
+    }
+
+    #luckyMessage {
+        font-size: 2em; /* 메시지 글자 크기도 줄일 수 있습니다. */
+    }
+}
